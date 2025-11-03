@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Vinod Kumar Profile</h1>
+<h1 align="center">Welcome to Vinod Goud Profile</h1>
 <h1 align="center"> Vinod Kumar</h1>
 <hr>
 <br>
