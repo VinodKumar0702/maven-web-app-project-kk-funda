@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to KK FUNDA DevOps Batch Starting Soon</h1>
-<h1 align="center">KKFUNDA</h1>
+<h1 align="center">VINODKUMAR</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
