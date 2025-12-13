@@ -22,7 +22,7 @@ node{
 			
 						curl -u vilu_vihaan:Vilohit_123\
 						--upload-file /var/lib/jenkins/workspace/scripted-PL/target/maven-web-application.war\
-						"http://13.235.73.238:8080/manager/text/deploy?path=/maven-web-application&update=true"
+						"http://13.235.73.238:808/manager/text/deploy?path=/maven-web-application&update=true"
 						
 					   """
 				  }
