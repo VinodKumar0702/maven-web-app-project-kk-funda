@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    tools{
+    maven "maven-3.9.11"
+    }
+        stages {
+            stage("git checkout"){
+                steps{
+                    echo "git success"
+                    git branch: 'development', credentialsId: 'aa3472d9-cae7-4938-a2f2-e5154875b1da', url: 'https://github.com/VinodKumar0702/maven-web-app-project-kk-funda.git'
+                }//steps end
+            }//stage end
+            stage("Build checkout"){
+                steps{
+                    sh 'mvn clean package'
+                }
+            }
+            stage("Tomcat deployment"){
+                steps{
+                    sh """
+						curl -u vilu_vihaan:Vilohit_123\
+						--upload-file /var/lib/jenkins/workspace/Declarative-PL-Dev/target/maven-web-application.war\
+						"http://13.235.73.238:8080//manager/text/deploy?path=/maven-web-application&update=true"
+						
+					   """
+                }
+            }
+        }//stages end
+}//pipeline end
