@@ -1,0 +1,15 @@
+pipeline{
+ agent any
+  tools{
+    maven "maven-3.9.11"
+  }
+    stages {
+       stage ("git checkout"){
+          steps{
+             echo "git stage successfully"
+             git branch: 'prod', credentialsId: 'aa3472d9-cae7-4938-a2f2-e5154875b1da', url: 'https://github.com/VinodKumar0702/maven-web-app-project-kk-funda.git'
+
+          }
+       }
+    }
+}
