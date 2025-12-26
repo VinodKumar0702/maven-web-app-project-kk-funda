@@ -11,5 +11,11 @@ pipeline{
 
           }
        }
+       stage("Build checkout"){
+           steps{
+              echo "Build checkout in prod"
+              sh "mvn clean package"
+           }
+       }
     }
 }
