@@ -1,4 +1,4 @@
-pipelines{
+pipeline{
  agent any
   tool{
     maven "maven-3.9.11"
